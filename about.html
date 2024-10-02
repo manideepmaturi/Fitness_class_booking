@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fitness Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: black; 
+            color: white; 
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .about-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .trainers-section, .gym-gallery-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .trainer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            align-items: start;
+        }
+
+        .trainer-card {
+            background-color: #0a0a0a;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .trainer-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .gym-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gym-gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Home</a>
+        </nav>
+    </header>
+    
+    <section class="about-section">
+        <h2>About Our Fitness Center</h2>
+        <p>We are committed to helping you reach your fitness goals with our professional trainers and state-of-the-art equipment. Join us to embark on a transformative fitness journey!</p>
+    </section>
+
+    <section class="trainers-section">
+        <h2>Meet Our Trainers</h2>
+        <div class="trainer-grid">
+            <div class="trainer-card">
+                <img src="1.jpg" alt="Trainer 1">
+                <h3>John Doe</h3>
+                <p>Strength Training Expert</p>
+            </div>
+            <div class="trainer-card">
+                <img src="2.jpg" alt="Trainer 2">
+                <h3>Jane Smith</h3>
+                <p>Yoga and Flexibility Coach</p>
+            </div>
+            <div class="trainer-card">
+                <img src="3.jpg" alt="Trainer 3">
+                <h3>Emily Johnson</h3>
+                <p>Pilates and Core Training</p>
+            </div>
+            <div class="trainer-card">
+                <img src="4.jpg" alt="Trainer 4">
+                <h3>Michael Lee</h3>
+                <p>Cardio and HIIT Specialist</p>
+            </div>
+            <div class="trainer-card">
+                <img src="1.jpg" alt="Trainer 5">
+                <h3>Sarah Brown</h3>
+                <p>Personal Trainer and Nutritionist</p>
+            </div>
+
+            <div class="trainer-card">
+                <img src="1.jpg" alt="Trainer 6">
+                <h3>David Wilson</h3>
+                <p>Boxing and Martial Arts Instructor</p>
+            </div>
+            <div class="trainer-card">
+                <img src="1.jpg" alt="Trainer 7">
+                <h3>Lisa Taylor</h3>
+                <p>Dance and Zumba Coach</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gym-gallery-section">
+        <h2>Explore Our Gym</h2>
+        <div class="gym-gallery">
+            <img src="view1.jpg" alt="Gym Image 1">
+            <img src="view2.jpeg" alt="Gym Image 2">
+            <img src="view3.jpeg" alt="Gym Image 3">
+            <img src="view4.jpg" alt="Gym Image 4">
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

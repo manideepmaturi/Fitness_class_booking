@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <form class="form" id="loginForm">
+        <span class="input-span">
+          <label for="email" class="label">Email</label>
+          <input type="email" name="email" id="email" />
+        </span>
+        <span class="input-span">
+          <label for="password" class="label">Password</label>
+          <input type="password" name="password" id="password" />
+        </span>
+        <button type="button" class="submit" id="loginButton">Log in</button>
+        <span class="span">
+          Don't have an account? <a href="registration.html">Sign up</a>
+        </span>
+      </form>
+    </div>
+
+    <button class="back-home" onclick="window.location.href='index.html'">Back to Home</button>
+
+
+    <script>
+      document.getElementById("loginButton").addEventListener("click", function(event) {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; 
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address.");
+          return; 
+        }
+
+        if (password.length <= 6) {
+          alert("Password must be longer than 6 characters.");
+          return; 
+        }
+        window.location.href = "index.html"; 
+      });
+    </script>
+  </body>
+</html>
