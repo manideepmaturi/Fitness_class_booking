@@ -1,0 +1,146 @@
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8%;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    
+    /* Background Image settings */
+    background-image: url('hero-1.jpg');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px; 
+    width: 30%;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 2px solid #333; 
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #00bfff;
+}
+
+.message,
+.signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+.signin a {
+    color: #00bfff;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 15px 10px 10px 15px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+    color: #00bfff;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.height-weight-container {
+display: flex;
+gap: 20px; /* Adds space between height and weight fields */
+margin-bottom: 15px; /* Space below the container */
+}
+.half-width {
+flex: 1;
+padding: 0 10px; /* Adds padding inside each input to create space from the border */
+}
+
+.form label {
+margin-bottom: 15px; /* Adds space between each field */
+}
+
+.form {
+padding: 50px; /* Added more padding inside the form */
+gap: 5px; /* Adjusted gap between form elements */
+}
+
+
+.submit {
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #00bfff;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #00bfff96;
+}
+
+.back-home {
+position: fixed;
+right: 20px;
+bottom: 20px;
+background-color: #007bff;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+font-size: 14px;
+}
+
+.back-home:hover {
+background-color: #0056b3;
+}
